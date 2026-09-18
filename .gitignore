@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+household.db
+.bank_key
