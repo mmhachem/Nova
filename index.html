@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HouseSplit — Shared expenses, simplified</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">H</div><div><strong>HouseSplit</strong><small>Shared living, simplified</small></div></div>
+    <select id="householdSelect" class="household-select"></select>
+    <nav id="nav">
+      <button data-view="dashboard" class="active">◫ <span>Dashboard</span></button>
+      <button data-view="expenses">⌁ <span>Expenses</span></button>
+      <button data-view="calendar">□ <span>Calendar</span></button>
+      <button data-view="settle">⇄ <span>Settle up</span></button>
+      <button data-view="members">♙ <span>Members</span></button>
+      <button data-view="history">↺ <span>History</span></button>
+    </nav>
+    <div class="sidebar-bottom"><button data-view="settings">⚙ <span>Settings</span></button><div class="security-note">🔒 Bank details encrypted locally</div></div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow">HOUSEHOLD FINANCE</p><h1 id="pageTitle">Good morning 👋</h1><p id="pageSubtitle">Here’s where your household stands this month.</p></div><button class="primary" id="addExpenseTop">＋ Add expense</button></header>
+    <section id="content"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle"></h2><button id="modalClose" class="icon-btn">×</button></div><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
